@@ -1,0 +1,31 @@
+{
+  "name": "node-prueba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mathjs": "^11.3.0",
+    "mime-types": "^2.1.35",
+    "moment": "^2.29.4",
+    "mysql2": "^2.3.3",
+    "prompt-sync": "^4.2.0",
+    "sequelize": "^6.24.0",
+    "write-excel-file": "^1.4.13",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "synk": "^0.0.02"
+  }
+}

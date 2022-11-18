@@ -1,0 +1,6 @@
+module.exports.comienza_mes = require('./comienza_mes')
+module.exports.Registrar_Entrada = require('./Registrar_Entrada')
+module.exports.Registrar_Salida = require('./Registrar_Salida')
+module.exports.dar_alta = require('./dar_alta')
+module.exports.pago_residentes = require('./pago_residentes')
+module.exports.read_registro = require('./read_registro')
