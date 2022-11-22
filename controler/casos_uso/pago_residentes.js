@@ -39,9 +39,9 @@ const pago_residentes = async(req,res,next) =>{
                       fecha_salida:null
                     }
                   });
-                  await listado.increment({total_acumulado:minutos},{
+                  await vehiculo.increment({total_acumulado:minutos},{
                      where:{
-                        matricula:element.dataValues.matricula
+                        matricula:Vehiculo.dataValues.matricula
                     }
                     })
                   }

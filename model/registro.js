@@ -1,7 +1,8 @@
 const Sequelize = require("sequelize");
 const db = require('../config/db.js')
+const vehiculo = require("./vehiculos")
 
-const registro = db.define('registro',{
+const registro= db.define('registro',{
     id:{
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -16,6 +17,9 @@ const registro = db.define('registro',{
     fecha_pago:{
         type:Sequelize.DATE
     },
+    vehiculoid:{
+        type:Sequelize.INTEGER
+    }
 })
 
 registro.belongsTo(vehiculo);

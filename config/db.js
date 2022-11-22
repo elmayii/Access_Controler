@@ -1,9 +1,9 @@
 const Sequelize = require("sequelize");
 require ('dotenv').config({path:'vars.env'})
 
-const db= new Sequelize(process.env.BD_NOMBRE, process.env.BD_USER,process.env.BD_PASS,{
-    host:process.env.BD_HOST,
-    port:process.env.BD_PORT,
+const db= new Sequelize('parqueo', "root","firY#D#)Qch2",{
+    host:"127.0.1.0",
+    port:3306,
     dialect:'mysql',
     define:{
         timestamps:false

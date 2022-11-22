@@ -32,6 +32,7 @@ const Registrar_Entrada= async (req,res) =>{
             }
         }
         catch (error){
+            console.log(error)
             return res.status(500).json("Something Happend")
         }
         return res.status(200).json('DataBase Update')

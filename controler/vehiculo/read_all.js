@@ -1,9 +1,10 @@
+const { typeOf } = require("mathjs")
 const vehiculo = require("../../model/vehiculos")
 
 const read_all = async (req,res) =>{
-    const {limit,Offer} = req.header
+    let {limit,offset} = req.headers
     try {
-      await vehiculo.findAll({offset:Number(Offset),limit:Number(limit)})
+      await vehiculo.findAll({offset:parseInt(offset),limit:parseInt(limit)})
     .then((data) =>{
         return res.status(200).json(data)
     })  

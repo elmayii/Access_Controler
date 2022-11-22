@@ -1,4 +1,4 @@
-const listado = require("../../model/vehiculos.js");
+const Vehiculo = require("../../model/vehiculos.js");
 const validar = require('../../helper/validar.js')
 
 const dar_alta = async (req,res) =>{
@@ -8,7 +8,7 @@ const dar_alta = async (req,res) =>{
 
     if(validar(vehiculo)){
         try{
-            await listado.create({
+            await Vehiculo.create({
                 matricula,
                 clasificacion,
                 total_acumulado

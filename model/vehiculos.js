@@ -23,13 +23,8 @@ const vehiculo = db.define('vehiculos',{
     },
 })
 
-vehiculo.hasMany(registro, {
-    foreignKey: {
-      name: "vehiculoid",
-      allowNull: false,
-    },
-    onDelete: "CASCADE",
-  });
-  
+vehiculo.associate = function(models) {
+  vehiculo.hasMany(models.registro);
+};
 
 module.exports= vehiculo
